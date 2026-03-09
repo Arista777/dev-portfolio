@@ -275,6 +275,11 @@ section p {
     object-fit: cover;
 }
 
+.card__image--contain {
+    object-fit: contain !important;
+    background: #f8fafc;
+}
+
 .card__body {
     padding: 1rem;
 }
