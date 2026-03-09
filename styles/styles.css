@@ -275,6 +275,44 @@ section p {
     object-fit: cover;
 }
 
+.card-carousel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.card-carousel__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: cardCarouselFade 12s infinite;
+}
+
+.card-carousel__image--1 {
+    animation-delay: 0s;
+}
+
+.card-carousel__image--2 {
+    animation-delay: 4s;
+}
+
+.card-carousel__image--3 {
+    animation-delay: 8s;
+}
+
+@keyframes cardCarouselFade {
+    0% { opacity: 0; }
+    6% { opacity: 1; }
+    28% { opacity: 1; }
+    34% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 .card__image--contain {
     object-fit: contain !important;
     background: #f8fafc;
